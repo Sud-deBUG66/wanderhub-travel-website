@@ -1130,3 +1130,156 @@ a {
 .guide-card:hover {
     cursor: pointer;
 }
+
+
+/*------------------conatct--------------------- */
+
+#contact {
+    padding: 80px 40px;
+    background: url("./assests/images/conatct.png");
+    object-fit: fill;
+}
+
+.contact-wrapper {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    padding: 40px 0;
+}
+
+.contact-left {
+    max-width: 450px;
+    width: 100%;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info h3 {
+    color: #f4b04a;
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.contact-info .info-main {
+    color: white;
+    font-size: 50px;
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-info .info-sub {
+    font-size: 20px;
+    color: white;
+}
+
+
+.info-icon {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 10px;
+}
+
+.info-box {
+    position: block;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, .12);
+}
+
+.info-box i {
+    font-size: 24px;
+    color: #ff7a00;
+    transition: .35s;
+}
+
+.info-icon:hover .info-box {
+    background: #ff7a00;
+}
+
+.info-icon:hover .info-box i {
+    color: #fff;
+    transform: rotate(12deg) scale(1.15);
+}
+
+
+.contact-form {
+    max-width: 500px;
+    width: 100%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: rgba(0, 0, 0, 0.386);
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.conatct-heading {
+    color: white;
+    margin: 0;
+    font-size: 20px;
+}
+
+.conatct-title {
+    color: white;
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.user {
+    display: flex;
+    gap: 10px;
+}
+
+.user .name {
+    width: 50%;
+}
+
+.user .email {
+    display: inline-block;
+    width: 50%;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: white;
+}
+
+.contact-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #ff7b00, #ffae00);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    transform: scale(1.05);
+}
