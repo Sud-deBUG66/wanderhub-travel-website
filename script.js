@@ -139,3 +139,43 @@ function filterPackages(event, category) {
 document.addEventListener("DOMContentLoaded", function () {
     filterPackages(null, "Adventure");
 });
+
+
+// ---------------- Travel Guide-------------//
+
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".guide-card");
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("show");
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.2
+    });
+    cards.forEach(card => observer.observe(card));
+
+    cards.forEach(card => {
+
+        card.addEventListener("mouseenter", () => {
+
+            card.style.transform = "translateY(-10px)";
+            card.style.transition = "0.35s ease";
+
+        });
+
+        card.addEventListener("mouseleave", () => {
+
+            card.style.transform = "translateY(0)";
+
+        });
+
+    });
+});
