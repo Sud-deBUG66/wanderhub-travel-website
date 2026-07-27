@@ -100,6 +100,68 @@
                 </div>
             </div>
         </nav>
+
+        <!-----------------videos-------------------->
+        <div class="video-section">
+            <video id="videoPlayer" autoplay muted playsinline></video>
+
+            <div class="controls">
+                <button onclick="changeVideo(0)">India 360</button>
+                <button onclick="changeVideo(1)">Adventure</button>
+                <button onclick="changeVideo(2)">Heritage</button>
+                <button onclick="changeVideo(3)">Spiritual</button>
+            </div>
+
+            <button id="muteBtn">🔇</button>
+        </div>
+
+        <!-----------------destination search box-------------------->
+        <div class="box">
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="fields">
+                <label>Destination</label>
+                <select id="state" onchange="updatePlaces()">
+                    <option value="">Select State</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="West Bengal">West Bengal</option>
+                </select>
+            </div>
+
+            <div class="fields">
+                <label>Check-in</label>
+                <input type="date">
+                </select>
+            </div>
+
+            <div class="fields">
+                <label>Check-out</label>
+                <input type="date">
+                </select>
+            </div>
+            <i class="fa-solid fa-user"></i>
+            <div class="fields">
+                <label>Guests</label>
+                <input type="number" placeholder="0">
+            </div>
+            <a href="" class="search-btn5">Search</a>
+        </div>
+
     </section>
 
     <script src="script.js"></script>
