@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderhub Travel</title>
+    <script src="https://kit.fontawesome.com/40f7dbf11a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="home" class="header">
+        <!---------logo---------->
+
+        <nav class="navbar">
+            <div class="logo">
+                <strong><span>W</span>ander<span>H</span>ub</strong>
+                <p style="color: rgb(182, 172, 172);">── Travel Made Simple ──</p>
+            </div>
+
+            <!---------navbar---------->
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destination">Destination</a></li>
+                <li><a href="#experiences">Experience</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#travel-guide">Travel-guide</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="search" name="search" class="search-field" placeholder="Search your destination...">
+                <button class="search-btn">
+                    <i class="fa-brands fa-sistrix"></i>
+                </button>
+            </div>
+            <div class="mobile-user">
+                <div class="login">
+                    <button type="button" class="icon" onclick="openModal(); return false;"><i
+                            class="fa-regular fa-user"></i>
+                        <span>Login | Sign</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-----------------loginModal-------------------->
+            <div id="loginModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <div class="modal-logo">
+                        <strong><span>W</span>ander<span>H</span>ub</strong>
+                        <p style="color: white;">── Travel Made Simple ──</p>
+                    </div>
+                    <h2>Welcome Back🤝</h2>
+                    <p class="login-text">
+                        Login to continue with Wanderhub
+                    </p>
+                    <form>
+                        <div class="input-box">
+                            <label for="email">Email Address</label>
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="password">Password</label>
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <div class="login-options">
+                            <label>
+                                <input type="checkbox">Remember me
+                            </label>
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <button class="btn1">
+                            <i class="fa-solid fa-lock"></i> Login
+                        </button>
+                    </form>
+                    <div class="divider">
+                        <span>OR</span>
+                    </div>
+                    <button class="btn2">
+                        <i class="fa-brands fa-google " style="color:#DB4437;"></i>
+                        Continue with Google
+                    </button>
+                    <button class="btn2">
+                        <i class="fa-brands fa-facebook" style="color:#1877F2;"></i>
+                        Continue with Facebook
+                    </button>
+                    <button class="btn2">
+                        <i class="fa-brands fa-github" style="color:#181717;"></i>
+                        Continue with GitHub
+                    </button>
+                    <p class="signup-text">
+                        Don't have an account?
+                        <a href="#">Create Account</a>
+                    </p>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
