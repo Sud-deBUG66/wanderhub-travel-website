@@ -79,3 +79,31 @@ var destinationSlider = new Swiper('.destination-slider', {
         clickable: true,
     },
 });
+
+
+//*-------------------experiences----------------------*//
+const wrapper = document.querySelector(".exp-wrapper");
+
+wrapper.innerHTML += wrapper.innerHTML;
+
+let scrollSpeed = 1;
+let isPaused = false;
+
+function autoScroll() {
+    if (!isPaused) {
+        wrapper.scrollLeft += scrollSpeed;
+        if (wrapper.scrollLeft >= wrapper.scrollWidth / 2) {
+            wrapper.scrollLeft = 0;
+        }
+    }
+    requestAnimationFrame(autoScroll);
+}
+
+autoScroll();
+wrapper.addEventListener("mouseenter", () => {
+    isPaused = true;
+});
+
+wrapper.addEventListener("mouseleave", () => {
+    isPaused = false;
+});
