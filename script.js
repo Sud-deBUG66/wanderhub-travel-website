@@ -107,3 +107,35 @@ wrapper.addEventListener("mouseenter", () => {
 wrapper.addEventListener("mouseleave", () => {
     isPaused = false;
 });
+
+//*------------packages-----------------------------*//
+
+function filterPackages(event, category) {
+    const cards = document.querySelectorAll(".package-card");
+    const buttons = document.querySelectorAll(".filter-buttons button");
+
+
+    if (event) {
+        buttons.forEach(btn => btn.classList.remove("active"));
+        event.target.classList.add("active");
+    }
+
+
+    cards.forEach(card => {
+        if (card.classList.contains(category)) {
+            card.style.display = "block";
+
+
+            setTimeout(() => {
+                card.classList.add("show");
+            }, 100);
+
+        } else {
+            card.style.display = "none";
+            card.classList.remove("show");
+        }
+    });
+}
+document.addEventListener("DOMContentLoaded", function () {
+    filterPackages(null, "Adventure");
+});

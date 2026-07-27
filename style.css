@@ -684,3 +684,125 @@ video {
     color: #f2f2f2;
     text-align: start;
 }
+
+/*------------------ packages--------------------- */
+
+#packages {
+    padding: 80px 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafafa;
+}
+
+.section-title {
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.filter-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+    background: red;
+}
+
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding-bottom: 20px;
+}
+
+.package-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transform: translateY(40px);
+    opacity: 0;
+    transition: 0.5s ease;
+    display: none;
+}
+
+.package-card.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.package-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.package-card:hover img {
+    transform: scale(1.1);
+}
+
+.card-content {
+    padding: 20px;
+    background: #000;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #f4b04a;
+}
+
+.card-content p {
+    color: #fff;
+    margin: 10px 0;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.rating {
+    color: #ffb300;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.rating span {
+    color: #777;
+    margin-left: 5px;
+}
+
+.card-content button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #f91900;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-content button:hover {
+    background: #000000;
+    border-style: inset;
+}
