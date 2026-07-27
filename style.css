@@ -1405,3 +1405,7 @@ textarea::placeholder {
 .footer-bottom h3 {
     margin-top: 0;
 }
+
+.ham {
+    display: none;
+}

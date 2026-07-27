@@ -179,3 +179,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 });
+
+// ---------------togglemenu-------------//
+
+function toggleMenu() {
+    const nav = document.querySelector('.nav-links');
+    console.log("clicked");
+
+    if (nav) {
+        nav.classList.toggle('active');
+    } else {
+        console.log("nav-links not found");
+    }
+}
+
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.remove('active');
+    });
+});
