@@ -1283,3 +1283,125 @@ textarea::placeholder {
 .contact-form button:hover {
     transform: scale(1.05);
 }
+
+/*------------------footer--------------------- */
+
+#footer {
+    background: #0f2027;
+    color: white;
+    padding-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 40px;
+}
+
+
+.footer-box {
+    flex: 2;
+    min-width: 100px;
+    margin: 0 30px;
+}
+
+.footer-logo {
+    margin-top: 18px;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-logo strong {
+    color: #f2f2f2;
+    font-size: 30px;
+}
+
+.footer-logo strong span {
+    color: #c91400;
+    font-size: 40px;
+}
+
+.footer-logo p {
+    margin-top: 0;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-box ul li {
+    margin: 8px 0;
+}
+
+.footer-box ul li a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.footer-box ul li a:hover {
+    color: #ff7b00;
+    opacity: 1;
+}
+
+.footer-text {
+    font-size: 12px;
+}
+
+.social-icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff7b00;
+}
+
+.footer-button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.footer-button:hover {
+    background: transparent;
+}
+
+.footer-box img {
+    border-radius: 15px;
+    width: 50%;
+    height: 55%;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.9rem;
+    opacity: 0.7;
+    padding-bottom: 40px;
+}
+
+.footer-bottom h3 {
+    margin-top: 0;
+}
