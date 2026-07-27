@@ -473,3 +473,128 @@ video {
     font-size: 16px;
     text-decoration: none;
 }
+
+/*------------------ destination--------------------- */
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-center h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.text-center p {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+#destination {
+    padding: 32px;
+    margin-bottom: 10px;
+}
+
+#destination .destination-slider {
+    height: auto;
+    padding: 20px 0;
+    position: relative;
+}
+
+.destination-slide {
+    width: 360px;
+    height: auto;
+    position: relative;
+    background: #FFEDCE;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.swiper-slide-active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.destination-slide .destination-slide-img {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+}
+
+.destination-slide .destination-slide-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.destination-slide .destination-slide-content {
+    position: static;
+    padding: 15px;
+    color: #333;
+}
+
+.destination-slide-content .destination-slide-content-bottom {
+    position: static;
+}
+
+.destination-slide-content h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.card-location {
+    font-size: 14px;
+    color: #c0392b;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card-airport {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card-desc {
+    font-size: 13px;
+    color: #000;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-footer span {
+    font-size: 13px;
+}
+
+.card-footer button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+    display: none;
+}
+
+.swiper-pagination {
+    position: relative;
+    width: 15rem;
+    margin-top: 23px;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background: red;
+}
