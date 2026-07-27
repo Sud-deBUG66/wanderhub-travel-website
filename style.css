@@ -1409,3 +1409,606 @@ textarea::placeholder {
 .ham {
     display: none;
 }
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .nav-links {
+        position: fixed !important;
+        top: 0;
+        margin-top: 46px;
+        left: -100% !important;
+        width: 100% !important;
+        height: 100vh;
+        background: black;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        padding: 0;
+        transition: left 0.4s ease;
+        z-index: 9999;
+    }
+
+    .nav-links.active {
+        left: 0 !important;
+    }
+
+    .nav-links li {
+        width: auto;
+        gap: 50px;
+    }
+
+    .nav-links a {
+        color: white !important;
+        font-size: 18px;
+        display: block;
+        text-align: center;
+    }
+
+    .ham {
+        display: block !important;
+        font-size: 24px;
+        color: grey;
+        z-index: 10000;
+        transition: 0.3s ease;
+    }
+
+    .logo {
+        position: fixed;
+        margin-left: 40px;
+    }
+
+    .logo strong {
+        font-size: 15px;
+    }
+
+    .logo span {
+        font-size: 18px;
+    }
+
+    .logo p {
+        font-size: 8px;
+    }
+
+
+    .search-container {
+        border-radius: 25px;
+        margin-left: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        transition: width 0.4s ease;
+    }
+
+    .search-field {
+        font-size: 8px;
+    }
+
+    .mobile-user {
+        margin-right: 20px;
+    }
+
+
+    .login span {
+        display: none;
+    }
+
+    .icon {
+        border: none;
+        padding: 6px;
+    }
+
+    .icon .fa-regular {
+        font-size: 20px;
+    }
+
+    .modal {
+        padding-top: 40px;
+    }
+
+
+    .modal-content {
+        width: 70%;
+        max-width: 350px;
+        max-height: 75%;
+        padding: 18px 15px;
+        border-radius: 16px;
+    }
+
+    .modal-logo strong {
+        font-size: 18px;
+    }
+
+    .modal-logo span {
+        font-size: 25px;
+    }
+
+    .modal-logo p {
+        font-size: 8px;
+    }
+
+    .modal-content h2 {
+        font-size: 24px;
+    }
+
+    .login-text {
+        font-size: 12px;
+    }
+
+
+    .input-box {
+        margin-top: 12px;
+        margin-bottom: 8px;
+    }
+
+    .input-box label {
+        font-size: 12px;
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
+
+    .input-box i {
+        left: 10px;
+        font-size: 14px;
+    }
+
+    .input-box input {
+        width: 90%;
+        height: 42px;
+        padding: 8px 35px 8px 38px;
+        font-size: 13px;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
+    .input-box input::placeholder {
+        font-size: 13px;
+    }
+
+    .login-options {
+        font-size: 10px;
+        padding: 0 7px;
+        margin: 8px 0;
+    }
+
+    .login-options label,
+    .login-options a {
+        font-size: 10px;
+    }
+
+    .btn1 {
+        width: 90%;
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .divider {
+        margin: 9px 0;
+    }
+
+    .divider span {
+        font-size: 11px;
+    }
+
+    .btn2 {
+        width: 94%;
+        height: 40px;
+        font-size: 12px;
+        margin: 3px auto;
+    }
+
+    .signup-text {
+        font-size: 10px;
+        margin-top: 7px;
+    }
+
+    .close {
+        font-size: 20px;
+    }
+
+
+    .controls {
+        flex-direction: row;
+        align-items: center;
+        padding: 0 10px;
+        top: 50%;
+    }
+
+    #muteBtn {
+        bottom: 130px;
+        right: 20px;
+    }
+
+    .controls button {
+        font-size: 14px;
+    }
+
+    .box {
+        width: 96%;
+        height: 58px;
+        padding: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        overflow: visible;
+        bottom: 100px;
+        border-radius: 15px;
+    }
+
+    .box i {
+        font-size: 10px;
+    }
+
+    .fields {
+        min-width: 0;
+        flex: 1;
+        padding: 4px 5px;
+        box-sizing: border-box;
+    }
+
+    .fields label {
+        font-size: 7px;
+        margin-bottom: 2px;
+        white-space: nowrap;
+    }
+
+    .fields input,
+    .fields select {
+        width: 100%;
+        min-width: 0;
+        font-size: 8px;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .search-btn5 {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 48px !important;
+        width: 48px !important;
+        height: 48px !important;
+        padding: 0;
+        margin: 0;
+        font-size: 8px !important;
+        line-height: 1;
+
+    }
+
+    .destination-slide {
+        width: 90%;
+        margin: auto;
+    }
+
+    .text-center h1,
+    .title {
+        font-size: 2rem;
+    }
+
+    #destination {
+        padding: 8px 10px;
+    }
+
+    .text-center h1 {
+        font-size: 1.8rem;
+    }
+
+    .text-center p {
+        font-size: 13px;
+    }
+
+    .destination-slide {
+        width: 100%;
+        max-width: 320px;
+        margin: auto;
+    }
+
+    .destination-slide .destination-slide-img {
+        height: 200px;
+    }
+
+    .destination-slide-content h2 {
+        font-size: 15px;
+    }
+
+    .card-location,
+    .card-airport,
+    .card-desc,
+    .card-footer span {
+        font-size: 12px;
+    }
+
+    .card-footer button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .swiper-pagination {
+        margin-top: 15px;
+    }
+
+    #packages {
+        padding: 40px 10px;
+    }
+
+    .packages-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .exp-box {
+        min-width: 200px;
+    }
+
+    #travel-guide {
+        padding: 45px 0;
+    }
+
+    .travel-guide .container {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .section-subtitle {
+        font-size: 13px !important;
+    }
+
+    .guide-title {
+        font-size: 24px !important;
+        line-height: 1.25 !important;
+    }
+
+    .section-text {
+        font-size: 12px !important;
+        line-height: 1.55 !important;
+    }
+
+    .explore-btn {
+        padding: 10px 11px !important;
+        font-size: 10px !important;
+    }
+
+    .avatars img {
+        width: 24px !important;
+        height: 24px !important;
+        margin-left: -7px !important;
+    }
+
+    .travellers {
+        gap: 5px !important;
+    }
+
+    .travellers p {
+        font-size: 8px !important;
+    }
+
+    .guide-cards {
+        width: 100% !important;
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 10px !important;
+    }
+
+    .guide-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        border-radius: 13px !important;
+    }
+
+    .guide-image {
+        height: 110px !important;
+    }
+
+    .icon-box {
+        top: 85px !important;
+        right: 7px !important;
+        width: 28px !important;
+        height: 28px !important;
+    }
+
+    .icon-box i {
+        font-size: 14px !important;
+    }
+
+    .card-content {
+        padding: 9px !important;
+    }
+
+    .card-content h3 {
+        font-size: 11px !important;
+        margin-bottom: 5px !important;
+    }
+
+    .card-content p {
+        font-size: 8px !important;
+        line-height: 1.4 !important;
+        margin-bottom: 6px !important;
+    }
+
+    .read-more {
+        font-size: 9px !important;
+        gap: 3px !important;
+    }
+
+    .read-more i {
+        font-size: 8px !important;
+    }
+
+    .explore-btn{
+        width: 35%;
+    }
+
+    #contact {
+        padding: 45px 15px;
+    }
+
+    .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        gap: 25px;
+        padding: 15px 0;
+    }
+
+
+    .contact-info h3 {
+        font-size: 13px;
+    }
+
+    .contact-info .info-main {
+        font-size: 27px;
+        line-height: 1.2;
+    }
+
+
+    .contact-info .info-sub {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .info-icon {
+        font-size: 12px;
+    }
+
+    .info-box {
+        width: 32px;
+        height: 32px;
+    }
+
+    .info-box i {
+        font-size: 15px;
+    }
+
+    .contact-form form {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .conatct-heading {
+        font-size: 16px;
+    }
+
+
+    .conatct-title {
+        font-size: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+        font-size: 11px;
+    }
+
+    .contact-form button {
+        padding: 11px;
+        font-size: 12px;
+    }
+
+    #footer {
+        width: 100%;
+        padding-top: 35px;
+        background: #0f2027;
+        overflow: hidden;
+    }
+
+    .footer-container {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 25px;
+
+        align-items: start;
+    }
+
+    .footer-box:first-child {
+        grid-column: 1 / -1;
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .footer-box {
+        width: 100%;
+        min-width: 0;
+        margin: 0;
+        flex: none;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin: 0;
+        text-align: center;
+    }
+
+    .footer-logo strong {
+        font-size: 24px;
+    }
+
+    .footer-logo strong span {
+        font-size: 30px;
+    }
+
+    .footer-logo p {
+        font-size: 10px;
+        padding-bottom: 8px;
+    }
+
+    .footer-text {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .footer-box ul {
+        margin: 10px 0 0;
+        padding: 0;
+    }
+
+    .footer-box ul li {
+        margin: 7px 0;
+    }
+
+    .footer-box ul li a {
+        font-size: 12px;
+    }
+
+    .footer-box h3 {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .social-icons {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .social-icons a {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .footer-box p {
+        font-size: 15px;
+        color: white;
+    }
+
+    .footer-button {
+        padding: 8px 15px;
+        border-radius: 20px;
+    }
+
+}
