@@ -1613,7 +1613,6 @@ textarea::placeholder {
         font-size: 20px;
     }
 
-
     .controls {
         flex-direction: row;
         align-items: center;
