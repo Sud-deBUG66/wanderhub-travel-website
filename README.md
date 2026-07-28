@@ -166,14 +166,6 @@ Open `index.html` in your browser, or use the VS Code **Live Server** extension.
 - Search and filter functionality
 - Interactive maps
 
-## 📸 Screens
-
-- 🏠 Home
-- 📍 Destinations
-- 🌄 Experiences
-- 🎒 Packages
--
-
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to fork the repository, create a new branch, and submit a pull request.
